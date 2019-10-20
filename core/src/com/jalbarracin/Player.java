@@ -59,6 +59,7 @@ public class Player {
         cards.remove(card);
         horizontalGroup.removeActor(card);
         main.board.putOnBoard(card);
+        card.clearListeners();
     }
 
     public boolean amICurrentPlayer() {
